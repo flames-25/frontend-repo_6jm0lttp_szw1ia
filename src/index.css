@@ -15,6 +15,8 @@
   html {
     font-family: var(--font-sans);
     font-feature-settings: "rlig" 1, "calt" 1;
+    color: #0a0a0a;
+    background: #ffffff;
   }
 
   body {
@@ -22,25 +24,28 @@
   }
 }
 
-/* Custom utility classes for shadcn/ui patterns */
-@layer utilities {
-  .animate-in {
-    animation-name: animateIn;
-    animation-duration: 350ms;
-    --tw-enter-opacity: initial;
-    --tw-enter-scale: initial;
-    --tw-enter-rotate: initial;
-    --tw-enter-translate-x: initial;
-    --tw-enter-translate-y: initial;
-  }
+/* Requested font utility classes */
+.source-code-pro-uniquifier {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Title helper using Source Code Pro with tighter tracking */
+.source-code-title {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
 
-  .animate-out {
-    animation-name: animateOut;
-    animation-duration: 350ms;
-    --tw-exit-opacity: initial;
-    --tw-exit-scale: initial;
-    --tw-exit-rotate: initial;
-    --tw-exit-translate-x: initial;
-    --tw-exit-translate-y: initial;
-  }
+/* Soft grid background helper if needed */
+.grid-bg {
+  background-image: linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px);
+  background-size: 24px 24px, 24px 24px;
+  background-position: -1px -1px, -1px -1px;
 }
